@@ -332,13 +332,13 @@ function App() {
       </main>
 
       {/* Leaderboard Sidebar/Bottom depending on screen */}
-      <div className="fixed bottom-6 right-6 hidden xl:block bg-gray-800 p-6 rounded-3xl shadow-2xl border border-gray-700 w-64">
-        <h3 className="text-gray-400 uppercase tracking-widest text-sm font-bold mb-4 border-b border-gray-700 pb-2">Leaderboard</h3>
-        <div className="space-y-3">
+      <div className="fixed bottom-8 right-8 hidden xl:block bg-gray-800 p-8 rounded-3xl shadow-2xl border border-gray-700 w-80">
+        <h3 className="text-gray-400 uppercase tracking-widest text-base font-bold mb-5 border-b border-gray-700 pb-3">Leaderboard</h3>
+        <div className="space-y-4">
           {[...groups].sort((a,b) => b.score - a.score).map((g, i) => (
-            <div key={g.id} className={`flex justify-between items-center ${g.id === currentGroup.id ? 'text-white font-bold' : 'text-gray-400'}`}>
-              <span className="truncate pr-2">{i+1}. {g.name}</span>
-              <span className={g.score > 0 ? 'text-green-400' : g.score < 0 ? 'text-red-400' : ''}>{g.score}</span>
+            <div key={g.id} className={`flex justify-between items-center text-lg ${g.id === currentGroup.id ? 'text-white font-black scale-105 transform transition-transform' : 'text-gray-400 font-medium'}`}>
+              <span className="truncate pr-3">{i+1}. {g.name}</span>
+              <span className={`font-black ${g.score > 0 ? 'text-green-400' : g.score < 0 ? 'text-red-400' : ''}`}>{g.score}</span>
             </div>
           ))}
         </div>

@@ -1,98 +1,127 @@
 {
   "Elementary": [
-    {
-      "sentence": "The dogs is playing in the park.",
-      "errorWord": "is",
-      "correction": "are",
-      "explanation": "Use 'are' for plural subjects like 'dogs'."
-    },
-    {
-      "sentence": "She don't like eating vegetables.",
-      "errorWord": "don't",
-      "correction": "doesn't",
-      "explanation": "Use 'doesn't' with he, she, or it."
-    },
-    {
-      "sentence": "I have an red apple in my bag.",
-      "errorWord": "an",
-      "correction": "a",
-      "explanation": "Use 'a' before words that start with a consonant sound."
-    },
-    {
-      "sentence": "They going to the school right now.",
-      "errorWord": "going",
-      "correction": "are going",
-      "explanation": "You need the 'to be' verb (are) before an -ing verb for present continuous."
-    },
-    {
-      "sentence": "Yesterday, we walk to the store.",
-      "errorWord": "walk",
-      "correction": "walked",
-      "explanation": "Add '-ed' to regular verbs to make them past tense."
-    }
+    { "sentence": "The dogs is playing in the park.", "errorWord": "is", "correction": "are", "explanation": "Use 'are' for plural subjects." },
+    { "sentence": "She don't like eating vegetables.", "errorWord": "don't", "correction": "doesn't", "explanation": "Use 'doesn't' with he, she, or it." },
+    { "sentence": "I have an red apple in my bag.", "errorWord": "an", "correction": "a", "explanation": "Use 'a' before words that start with a consonant sound." },
+    { "sentence": "They going to the school right now.", "errorWord": "going", "correction": "are going", "explanation": "You need the 'to be' verb before an -ing verb for present continuous." },
+    { "sentence": "Yesterday, we walk to the store.", "errorWord": "walk", "correction": "walked", "explanation": "Add '-ed' to regular verbs to make them past tense." },
+    { "sentence": "He have a big blue car.", "errorWord": "have", "correction": "has", "explanation": "Use 'has' for third-person singular subjects (he, she, it)." },
+    { "sentence": "The childrens are playing outside.", "errorWord": "childrens", "correction": "children", "explanation": "'Children' is already plural. Do not add an 's'." },
+    { "sentence": "My birthday is in Monday.", "errorWord": "in", "correction": "on", "explanation": "Use the preposition 'on' for days of the week." },
+    { "sentence": "We goed to the park after lunch.", "errorWord": "goed", "correction": "went", "explanation": "'Go' is an irregular verb. Its past tense is 'went'." },
+    { "sentence": "She is more taller than her brother.", "errorWord": "more", "correction": "(remove)", "explanation": "You do not need 'more' when using an adjective ending in '-er'." },
+    { "sentence": "I look at she when she speaks.", "errorWord": "she", "correction": "her", "explanation": "Use the object pronoun 'her' after a preposition." },
+    { "sentence": "There is many apples in the basket.", "errorWord": "is", "correction": "are", "explanation": "Use 'are' because 'apples' is a plural noun." },
+    { "sentence": "I don't have no money today.", "errorWord": "no", "correction": "any", "explanation": "Avoid double negatives. Use 'any' after a negative verb." },
+    { "sentence": "He can swimming very fast.", "errorWord": "swimming", "correction": "swim", "explanation": "Use the base form of the verb after modal verbs like 'can'." },
+    { "sentence": "Where you live in the city?", "errorWord": "Where", "correction": "Where do", "explanation": "Present simple questions need a helping verb like 'do' or 'does'." },
+    { "sentence": "This is mine book.", "errorWord": "mine", "correction": "my", "explanation": "Use the possessive adjective 'my' before a noun." },
+    { "sentence": "He always watch TV at night.", "errorWord": "watch", "correction": "watches", "explanation": "Add '-es' to verbs ending in -ch for third-person singular." },
+    { "sentence": "The cat sleeped on the sofa all day.", "errorWord": "sleeped", "correction": "slept", "explanation": "'Sleep' is an irregular verb. The past tense is 'slept'." },
+    { "sentence": "I am born in 2010.", "errorWord": "am", "correction": "was", "explanation": "Birth is a completed past event, so use the past tense 'was'." },
+    { "sentence": "She wears a blue beautiful dress.", "errorWord": "blue beautiful", "correction": "beautiful blue", "explanation": "Opinion adjectives (beautiful) come before color adjectives (blue)." },
+    { "sentence": "We are studying English since two hours.", "errorWord": "since", "correction": "for", "explanation": "Use 'for' to talk about an amount of time." },
+    { "sentence": "He is a honest boy.", "errorWord": "a", "correction": "an", "explanation": "Use 'an' because 'honest' starts with a vowel sound." },
+    { "sentence": "Does she likes playing tennis?", "errorWord": "likes", "correction": "like", "explanation": "After 'does', the main verb must be in its base form without an 's'." },
+    { "sentence": "I usually gets up at 7 AM.", "errorWord": "gets", "correction": "get", "explanation": "Do not add 's' to the verb for the subject 'I'." },
+    { "sentence": "They didn't went to the party.", "errorWord": "went", "correction": "go", "explanation": "After 'didn't', use the base form of the verb." },
+    { "sentence": "The weather is very hot yesterday.", "errorWord": "is", "correction": "was", "explanation": "Use 'was' for the past tense." },
+    { "sentence": "My mother make a cake every Sunday.", "errorWord": "make", "correction": "makes", "explanation": "Use 'makes' for a third-person singular subject." },
+    { "sentence": "I have two knifes in the kitchen.", "errorWord": "knifes", "correction": "knives", "explanation": "Nouns ending in '-fe' usually change to '-ves' in the plural." },
+    { "sentence": "Look at that birds in the sky.", "errorWord": "that", "correction": "those", "explanation": "Use 'those' for plural nouns that are far away." },
+    { "sentence": "She speaks English very good.", "errorWord": "good", "correction": "well", "explanation": "Use the adverb 'well' to describe an action." },
+    { "sentence": "I am agree with you.", "errorWord": "am agree", "correction": "agree", "explanation": "'Agree' is a verb, so you do not need the 'to be' verb before it." },
+    { "sentence": "He put the book in the table.", "errorWord": "in", "correction": "on", "explanation": "Use 'on' for surfaces." },
+    { "sentence": "We will to go to the museum tomorrow.", "errorWord": "to", "correction": "(remove)", "explanation": "Do not use 'to' after the modal verb 'will'." },
+    { "sentence": "She is the most tallest girl in class.", "errorWord": "most", "correction": "(remove)", "explanation": "Do not use 'most' with adjectives that already end in '-est'." },
+    { "sentence": "I have a lot of informations about it.", "errorWord": "informations", "correction": "information", "explanation": "'Information' is an uncountable noun and does not take an 's'." },
+    { "sentence": "He smiled happy when he saw her.", "errorWord": "happy", "correction": "happily", "explanation": "Use an adverb (happily) to describe how an action (smiled) was done." },
+    { "sentence": "The mouses ran across the kitchen floor.", "errorWord": "mouses", "correction": "mice", "explanation": "The plural of 'mouse' is the irregular noun 'mice'." },
+    { "sentence": "I need some advices on this project.", "errorWord": "advices", "correction": "advice", "explanation": "'Advice' is an uncountable noun. Do not add an 's'." },
+    { "sentence": "They are waiting at the bus stop since morning.", "errorWord": "are waiting", "correction": "have been waiting", "explanation": "Use the present perfect continuous for actions starting in the past and continuing now." }
   ],
   "Middle School": [
-    {
-      "sentence": "If it will rain, we will stay inside.",
-      "errorWord": "will rain",
-      "correction": "rains",
-      "explanation": "In a first conditional sentence, the 'if' clause uses the present simple tense."
-    },
-    {
-      "sentence": "He plays tennis good enough to win the tournament.",
-      "errorWord": "good",
-      "correction": "well",
-      "explanation": "'Good' is an adjective. Use the adverb 'well' to describe an action (plays)."
-    },
-    {
-      "sentence": "I have been living here since three years.",
-      "errorWord": "since",
-      "correction": "for",
-      "explanation": "Use 'for' with a period of time (three years). Use 'since' with a specific point in time (2020)."
-    },
-    {
-      "sentence": "Neither of the boys have brought their books.",
-      "errorWord": "have",
-      "correction": "has",
-      "explanation": "'Neither' is singular, so it takes the singular verb 'has'."
-    },
-    {
-      "sentence": "The book who is on the table belongs to me.",
-      "errorWord": "who",
-      "correction": "which / that",
-      "explanation": "Use 'who' for people. Use 'which' or 'that' for objects."
-    }
+    { "sentence": "If it will rain, we will stay inside.", "errorWord": "will rain", "correction": "rains", "explanation": "In a first conditional, the 'if' clause uses the present simple tense." },
+    { "sentence": "I have been living here since three years.", "errorWord": "since", "correction": "for", "explanation": "Use 'for' with a duration. Use 'since' with a specific starting point." },
+    { "sentence": "Neither of the boys have brought their books.", "errorWord": "have", "correction": "has", "explanation": "'Neither' is a singular subject, so it takes a singular verb." },
+    { "sentence": "The book who is on the table is mine.", "errorWord": "who", "correction": "which / that", "explanation": "Use 'who' for people and 'which' or 'that' for objects." },
+    { "sentence": "I have seen that movie yesterday.", "errorWord": "have seen", "correction": "saw", "explanation": "Use the simple past tense when a specific past time is mentioned." },
+    { "sentence": "Despite of the rain, we played soccer.", "errorWord": "of", "correction": "(remove)", "explanation": "Use 'despite' alone, or 'in spite of'. Never use 'despite of'." },
+    { "sentence": "She asked me where was I going.", "errorWord": "was I", "correction": "I was", "explanation": "In reported questions, use standard statement word order (subject + verb)." },
+    { "sentence": "I am used to wake up early.", "errorWord": "wake", "correction": "waking", "explanation": "After the phrase 'be used to', use the -ing form (gerund) of the verb." },
+    { "sentence": "By this time tomorrow, I will finish the project.", "errorWord": "finish", "correction": "have finished", "explanation": "Use the future perfect for actions completed before a future time." },
+    { "sentence": "I look forward to meet you next week.", "errorWord": "meet", "correction": "meeting", "explanation": "The 'to' in 'look forward to' is a preposition, so it is followed by a gerund." },
+    { "sentence": "Less students came to the assembly today.", "errorWord": "Less", "correction": "Fewer", "explanation": "Use 'fewer' for countable nouns and 'less' for uncountable nouns." },
+    { "sentence": "I wish I am taller to play basketball.", "errorWord": "am", "correction": "were", "explanation": "Use 'were' for hypothetical or unreal situations after 'wish'." },
+    { "sentence": "The movie was so bored that I fell asleep.", "errorWord": "bored", "correction": "boring", "explanation": "Use '-ing' adjectives for the cause of a feeling, and '-ed' for the feeling itself." },
+    { "sentence": "The pizza was eaten by they.", "errorWord": "they", "correction": "them", "explanation": "Use object pronouns (me, him, her, us, them) after prepositions like 'by'." },
+    { "sentence": "He told me that he will call later.", "errorWord": "will", "correction": "would", "explanation": "In reported speech, backshift the tense ('will' becomes 'would')." },
+    { "sentence": "She enjoys to read books on the weekend.", "errorWord": "to read", "correction": "reading", "explanation": "The verb 'enjoy' must be followed by a gerund (-ing form)." },
+    { "sentence": "If I had a million dollars, I will buy a boat.", "errorWord": "will", "correction": "would", "explanation": "Second conditionals use 'would + verb' in the main clause." },
+    { "sentence": "The scissors is on the kitchen counter.", "errorWord": "is", "correction": "are", "explanation": "Nouns with two parts, like scissors or glasses, take plural verbs." },
+    { "sentence": "He runs faster then anyone else on the team.", "errorWord": "then", "correction": "than", "explanation": "Use 'than' for comparisons. 'Then' refers to time." },
+    { "sentence": "I prefer drinking tea than drinking coffee.", "errorWord": "than", "correction": "to", "explanation": "The correct phrase is 'prefer [something] to [something else]'." },
+    { "sentence": "She is the girl whose dog ran away.", "errorWord": "who's", "correction": "whose", "explanation": "'Whose' shows possession. 'Who's' is a contraction for 'who is'." },
+    { "sentence": "I can't hardly hear the teacher over the noise.", "errorWord": "can't hardly", "correction": "can hardly", "explanation": "'Hardly' is a negative word, so avoid using it with another negative like 'can't'." },
+    { "sentence": "We ought go to the library to study.", "errorWord": "ought go", "correction": "ought to go", "explanation": "The modal 'ought' must always be followed by 'to'." },
+    { "sentence": "Have you finished to do your homework?", "errorWord": "to do", "correction": "doing", "explanation": "The verb 'finish' is followed by a gerund (-ing)." },
+    { "sentence": "He is very interested on learning history.", "errorWord": "on", "correction": "in", "explanation": "The correct preposition phrase is 'interested in'." },
+    { "sentence": "This is the most bad movie I have ever seen.", "errorWord": "most bad", "correction": "worst", "explanation": "'Bad' has an irregular superlative form: 'worst'." },
+    { "sentence": "I will call you when I will arrive.", "errorWord": "will arrive", "correction": "arrive", "explanation": "In time clauses (after 'when'), use the present tense for future events." },
+    { "sentence": "The news are on television at 6 PM.", "errorWord": "are", "correction": "is", "explanation": "'News' is an uncountable noun and takes a singular verb." },
+    { "sentence": "He was so tired, therefore he went to bed early.", "errorWord": "therefore", "correction": "so", "explanation": "'Therefore' usually starts a new sentence or follows a semicolon. Use 'so' as a conjunction here." },
+    { "sentence": "I stopped to smoke five years ago.", "errorWord": "to smoke", "correction": "smoking", "explanation": "'Stop + gerund' means quitting a habit. 'Stop + infinitive' means halting to do something else." },
+    { "sentence": "Do you know what time is it?", "errorWord": "is it", "correction": "it is", "explanation": "In embedded questions, use regular sentence word order (subject + verb)." },
+    { "sentence": "She gave me a very good advice.", "errorWord": "a", "correction": "some / (remove)", "explanation": "'Advice' is uncountable, so you cannot use 'a' or 'an' before it." },
+    { "sentence": "Every students must wear a uniform.", "errorWord": "students", "correction": "student", "explanation": "The word 'every' is always followed by a singular countable noun." },
+    { "sentence": "The house was built by wood.", "errorWord": "by", "correction": "of", "explanation": "Use 'of' to describe the material something is made from. 'By' indicates the creator." },
+    { "sentence": "She has been a teacher for 2015.", "errorWord": "for", "correction": "since", "explanation": "Use 'since' for a specific point in time in the past." },
+    { "sentence": "I'm looking forward to see you soon.", "errorWord": "to see", "correction": "to seeing", "explanation": "The phrase 'look forward to' requires a gerund (-ing)." },
+    { "sentence": "He promised me to not tell anyone.", "errorWord": "to not tell", "correction": "not to tell", "explanation": "Place 'not' before the infinitive 'to' when making it negative." },
+    { "sentence": "She couldn't help to laugh at the joke.", "errorWord": "to laugh", "correction": "laughing", "explanation": "The phrase 'cannot help' is always followed by a gerund." },
+    { "sentence": "You had better to leave before it gets dark.", "errorWord": "to leave", "correction": "leave", "explanation": "The modal phrase 'had better' is followed by the base verb without 'to'." },
+    { "sentence": "He reminded me buying milk on the way home.", "errorWord": "buying", "correction": "to buy", "explanation": "'Remind' takes an infinitive when telling someone to perform a future action." }
   ],
   "High School": [
-    {
-      "sentence": "The committee have reached a final decision.",
-      "errorWord": "have",
-      "correction": "has",
-      "explanation": "Collective nouns like 'committee' usually take singular verbs when acting as a single unit."
-    },
-    {
-      "sentence": "Had I known about the traffic, I would take a different route.",
-      "errorWord": "take",
-      "correction": "have taken",
-      "explanation": "Third conditionals require 'would have + past participle' in the main clause."
-    },
-    {
-      "sentence": "She objected to him leaving the meeting early.",
-      "errorWord": "him",
-      "correction": "his",
-      "explanation": "Use a possessive pronoun (his) before a gerund (leaving)."
-    },
-    {
-      "sentence": "The new policy affects less people than we expected.",
-      "errorWord": "less",
-      "correction": "fewer",
-      "explanation": "Use 'fewer' for countable nouns (people) and 'less' for uncountable nouns (water)."
-    },
-    {
-      "sentence": "Not only he is intelligent, but he is also hardworking.",
-      "errorWord": "he is",
-      "correction": "is he",
-      "explanation": "When a sentence starts with 'Not only', the subject and verb must be inverted."
-    }
+    { "sentence": "The committee have reached a final decision.", "errorWord": "have", "correction": "has", "explanation": "Collective nouns take singular verbs when acting as a single unit." },
+    { "sentence": "Had I known about the traffic, I would take a different route.", "errorWord": "take", "correction": "have taken", "explanation": "Third conditionals require 'would have + past participle'." },
+    { "sentence": "She objected to him leaving the meeting early.", "errorWord": "him", "correction": "his", "explanation": "Formal English requires a possessive pronoun before a gerund." },
+    { "sentence": "The new policy affects less people than expected.", "errorWord": "less", "correction": "fewer", "explanation": "Use 'fewer' for countable nouns and 'less' for uncountable nouns." },
+    { "sentence": "Not only he is intelligent, but he is also hardworking.", "errorWord": "he is", "correction": "is he", "explanation": "Sentences starting with negative phrases like 'Not only' require subject-verb inversion." },
+    { "sentence": "I demand that he apologizes to the client.", "errorWord": "apologizes", "correction": "apologize", "explanation": "Use the subjunctive mood (base form) after verbs of demand or request." },
+    { "sentence": "Hardly I had sat down when the phone rang.", "errorWord": "I had", "correction": "had I", "explanation": "Negative adverbs (Hardly, Never) at the beginning of a sentence require inversion." },
+    { "sentence": "The reason he failed the exam is because he didn't study.", "errorWord": "because", "correction": "that", "explanation": "'The reason is because' is redundant. Use 'The reason is that'." },
+    { "sentence": "She suggested to go to the beach for the weekend.", "errorWord": "to go", "correction": "going", "explanation": "The verb 'suggest' cannot be followed by an infinitive. Use a gerund." },
+    { "sentence": "Between you and I, this plan is never going to work.", "errorWord": "I", "correction": "me", "explanation": "'Between' is a preposition and must be followed by an object pronoun." },
+    { "sentence": "The person whom called you left a message.", "errorWord": "whom", "correction": "who", "explanation": "Use 'who' when it acts as the subject of the clause (called)." },
+    { "sentence": "It is high time you start studying for the finals.", "errorWord": "start", "correction": "started", "explanation": "'It is high time' must be followed by the past tense to indicate delayed action." },
+    { "sentence": "He was laying on the bed reading a book.", "errorWord": "laying", "correction": "lying", "explanation": "'Lay' requires a direct object. Use 'lie' (lying) for resting." },
+    { "sentence": "The number of students enrolled are increasing this year.", "errorWord": "are", "correction": "is", "explanation": "The phrase 'The number of' takes a singular verb." },
+    { "sentence": "Irregardless of the weather, we will proceed.", "errorWord": "Irregardless", "correction": "Regardless", "explanation": "'Irregardless' is nonstandard due to the double negative prefix and suffix." },
+    { "sentence": "Walking down the street, the trees were beautiful.", "errorWord": "the trees", "correction": "I saw the trees", "explanation": "This is a dangling modifier. The trees were not walking; the subject must follow the comma." },
+    { "sentence": "He is one of the men who is responsible for the project.", "errorWord": "is", "correction": "are", "explanation": "In 'one of the [plural noun] who', the relative pronoun 'who' refers to the plural noun, requiring a plural verb." },
+    { "sentence": "The team comprised of experts from various fields.", "errorWord": "of", "correction": "(remove)", "explanation": "The verb 'comprise' means 'to consist of', so adding 'of' is redundant." },
+    { "sentence": "I would rather you didn't told anyone about this.", "errorWord": "told", "correction": "tell", "explanation": "After 'would rather + subject + didn't', use the base form of the verb." },
+    { "sentence": "No sooner had he left the house then it started raining.", "errorWord": "then", "correction": "than", "explanation": "The comparative phrase 'No sooner' is always paired with 'than'." },
+    { "sentence": "She didn't know whether to accept the offer or declining it.", "errorWord": "declining", "correction": "to decline", "explanation": "Parallel structure requires both verbs to be infinitives." },
+    { "sentence": "He was inferred by her tone that she was angry.", "errorWord": "inferred", "correction": "implied", "explanation": "Speakers 'imply' meaning. Listeners 'infer' meaning." },
+    { "sentence": "The data from the experiment proves our hypothesis.", "errorWord": "proves", "correction": "prove", "explanation": "'Data' is strictly plural (singular is 'datum') in formal academic English." },
+    { "sentence": "Whomever wins the race will get a trophy.", "errorWord": "Whomever", "correction": "Whoever", "explanation": "Use 'Whoever' because it serves as the subject of the verb 'wins'." },
+    { "sentence": "The phenomena was observed by multiple scientists.", "errorWord": "was", "correction": "were", "explanation": "'Phenomena' is the plural form of 'phenomenon', requiring a plural verb." },
+    { "sentence": "I cannot help but to wonder what happened.", "errorWord": "to wonder", "correction": "wonder", "explanation": "The idiom 'cannot help but' is followed by the bare infinitive." },
+    { "sentence": "Due to the fact that it rained, the game was canceled.", "errorWord": "Due to the fact that", "correction": "Because", "explanation": "'Due to the fact that' is a wordy and redundant phrase." },
+    { "sentence": "Scarcely had the play started than the power went out.", "errorWord": "than", "correction": "when", "explanation": "The negative adverb 'Scarcely' is paired with 'when', not 'than'." },
+    { "sentence": "His behavior is different than what I expected.", "errorWord": "than", "correction": "from", "explanation": "In formal English, things are 'different from' each other, not 'different than'." },
+    { "sentence": "The jury are deliberating in the next room.", "errorWord": "are", "correction": "is", "explanation": "As a collective noun, 'jury' takes a singular verb when acting as one body." },
+    { "sentence": "I am accustomed to sleep with the window open.", "errorWord": "sleep", "correction": "sleeping", "explanation": "'Accustomed to' must be followed by a gerund (-ing)." },
+    { "sentence": "She read the book cover to cover in a continuous uninterrupted sitting.", "errorWord": "uninterrupted", "correction": "(remove)", "explanation": "'Continuous' and 'uninterrupted' mean the same thing, creating a redundancy." },
+    { "sentence": "We discussed about the political situation for hours.", "errorWord": "about", "correction": "(remove)", "explanation": "The verb 'discuss' takes a direct object. You do not discuss 'about' something." },
+    { "sentence": "She likes hiking, swimming, and to ride bicycles.", "errorWord": "to ride", "correction": "riding", "explanation": "Parallel structure dictates that items in a list should share the same grammatical form (gerunds)." },
+    { "sentence": "He gave the documents to the manager and myself.", "errorWord": "myself", "correction": "me", "explanation": "Do not use a reflexive pronoun (myself) when a simple object pronoun (me) is required." },
+    { "sentence": "The amount of coins in the jar was surprising.", "errorWord": "amount", "correction": "number", "explanation": "Use 'number' for countable objects (coins), and 'amount' for uncountable items." },
+    { "sentence": "They will divide the profits equally between the four partners.", "errorWord": "between", "correction": "among", "explanation": "Use 'between' for two distinct entities, and 'among' for three or more." },
+    { "sentence": "The manager, along with his staff, are attending the conference.", "errorWord": "are", "correction": "is", "explanation": "Phrases like 'along with' do not make the singular subject 'manager' plural." },
+    { "sentence": "By the time we arrive, the concert will start.", "errorWord": "will start", "correction": "will have started", "explanation": "Use the future perfect to describe an action completed before another future action." },
+    { "sentence": "It is essential that she arrives on time.", "errorWord": "arrives", "correction": "arrive", "explanation": "The adjective 'essential' triggers the subjunctive mood, which requires the base verb." }
   ]
 }
