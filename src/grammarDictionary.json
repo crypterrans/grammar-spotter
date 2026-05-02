@@ -1,0 +1,98 @@
+{
+  "Elementary": [
+    {
+      "sentence": "The dogs is playing in the park.",
+      "errorWord": "is",
+      "correction": "are",
+      "explanation": "Use 'are' for plural subjects like 'dogs'."
+    },
+    {
+      "sentence": "She don't like eating vegetables.",
+      "errorWord": "don't",
+      "correction": "doesn't",
+      "explanation": "Use 'doesn't' with he, she, or it."
+    },
+    {
+      "sentence": "I have an red apple in my bag.",
+      "errorWord": "an",
+      "correction": "a",
+      "explanation": "Use 'a' before words that start with a consonant sound."
+    },
+    {
+      "sentence": "They going to the school right now.",
+      "errorWord": "going",
+      "correction": "are going",
+      "explanation": "You need the 'to be' verb (are) before an -ing verb for present continuous."
+    },
+    {
+      "sentence": "Yesterday, we walk to the store.",
+      "errorWord": "walk",
+      "correction": "walked",
+      "explanation": "Add '-ed' to regular verbs to make them past tense."
+    }
+  ],
+  "Middle School": [
+    {
+      "sentence": "If it will rain, we will stay inside.",
+      "errorWord": "will rain",
+      "correction": "rains",
+      "explanation": "In a first conditional sentence, the 'if' clause uses the present simple tense."
+    },
+    {
+      "sentence": "He plays tennis good enough to win the tournament.",
+      "errorWord": "good",
+      "correction": "well",
+      "explanation": "'Good' is an adjective. Use the adverb 'well' to describe an action (plays)."
+    },
+    {
+      "sentence": "I have been living here since three years.",
+      "errorWord": "since",
+      "correction": "for",
+      "explanation": "Use 'for' with a period of time (three years). Use 'since' with a specific point in time (2020)."
+    },
+    {
+      "sentence": "Neither of the boys have brought their books.",
+      "errorWord": "have",
+      "correction": "has",
+      "explanation": "'Neither' is singular, so it takes the singular verb 'has'."
+    },
+    {
+      "sentence": "The book who is on the table belongs to me.",
+      "errorWord": "who",
+      "correction": "which / that",
+      "explanation": "Use 'who' for people. Use 'which' or 'that' for objects."
+    }
+  ],
+  "High School": [
+    {
+      "sentence": "The committee have reached a final decision.",
+      "errorWord": "have",
+      "correction": "has",
+      "explanation": "Collective nouns like 'committee' usually take singular verbs when acting as a single unit."
+    },
+    {
+      "sentence": "Had I known about the traffic, I would take a different route.",
+      "errorWord": "take",
+      "correction": "have taken",
+      "explanation": "Third conditionals require 'would have + past participle' in the main clause."
+    },
+    {
+      "sentence": "She objected to him leaving the meeting early.",
+      "errorWord": "him",
+      "correction": "his",
+      "explanation": "Use a possessive pronoun (his) before a gerund (leaving)."
+    },
+    {
+      "sentence": "The new policy affects less people than we expected.",
+      "errorWord": "less",
+      "correction": "fewer",
+      "explanation": "Use 'fewer' for countable nouns (people) and 'less' for uncountable nouns (water)."
+    },
+    {
+      "sentence": "Not only he is intelligent, but he is also hardworking.",
+      "errorWord": "he is",
+      "correction": "is he",
+      "explanation": "When a sentence starts with 'Not only', the subject and verb must be inverted."
+    }
+  ]
+}
