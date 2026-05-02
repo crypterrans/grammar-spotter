@@ -24,6 +24,7 @@ function App() {
   const [animatingWordIndex, setAnimatingWordIndex] = useState(null);
   const [animState, setAnimState] = useState(null); // 'correct' | 'incorrect'
   const [addedTimeKey, setAddedTimeKey] = useState(0); // Triggers the +2s animation
+  const [deductedTimeKey, setDeductedTimeKey] = useState(0); // Triggers the -1s animation
 
   const currentLevelData = dictionary[level];
   const currentSentenceData = currentLevelData[currentIndex % currentLevelData.length]; // Loop safely
@@ -98,6 +99,9 @@ function App() {
     if (isCorrect) {
       setTimeLeft(prev => prev + 2);
       setAddedTimeKey(prev => prev + 1); // trigger animation
+    } else {
+      setTimeLeft(prev => Math.max(0, prev - 1));
+      setDeductedTimeKey(prev => prev + 1);
     }
 
     // Record history for the review phase
@@ -206,30 +210,40 @@ function App() {
           </div>
         </div>
 
-        <div className="w-full max-w-5xl bg-gray-800 rounded-3xl p-8 shadow-2xl border border-gray-700">
-          <h3 className="text-2xl font-bold text-gray-400 mb-8 uppercase tracking-widest text-center border-b border-gray-700 pb-4">Activity Review & Explanations</h3>
-          <div className="space-y-6">
-            {gameHistory.map((h, i) => (
-              <div key={i} className={`p-6 rounded-2xl border-l-8 ${h.isCorrect ? 'bg-green-900/20 border-green-500' : 'bg-red-900/20 border-red-500'}`}>
-                <div className="flex justify-between items-start mb-4">
-                  <p className="text-2xl font-medium">{h.sentence}</p>
-                  <span className="text-sm font-bold text-gray-400 ml-4 bg-gray-900 px-3 py-1 rounded-full">{h.groupName}</span>
+        <div className="w-full max-w-5xl space-y-12 mb-12">
+          <h3 className="text-3xl font-bold text-gray-400 mb-4 uppercase tracking-widest text-center">Group Performance Review</h3>
+          {groups.map(group => {
+            const groupHistory = gameHistory.filter(h => h.groupName === group.name);
+            if (groupHistory.length === 0) return null;
+
+            return (
+              <div key={group.id} className="bg-gray-800 rounded-3xl p-8 shadow-2xl border border-gray-700">
+                <div className="flex justify-between items-center mb-6 border-b border-gray-700 pb-4">
+                  <h4 className="text-3xl font-black text-white">{group.name}</h4>
+                  <span className={`text-2xl font-bold ${group.score >= 0 ? 'text-green-400' : 'text-red-400'}`}>{group.score} pts</span>
                 </div>
-                
-                <div className="flex items-center space-x-4 mb-4 bg-gray-900/50 p-4 rounded-xl inline-block">
-                  <span className={`text-xl font-bold line-through decoration-4 ${h.isCorrect ? 'text-green-300 decoration-green-600' : 'text-rose-400 decoration-rose-600'}`}>
-                    {h.guessedWord}
-                  </span>
-                  <span className="text-gray-500 text-xl">➔</span>
-                  <span className="text-green-400 text-2xl font-black">
-                    {h.correction}
-                  </span>
+                <div className="space-y-6">
+                  {groupHistory.map((h, i) => (
+                    <div key={i} className={`p-6 rounded-2xl border-l-8 ${h.isCorrect ? 'bg-green-900/20 border-green-500' : 'bg-red-900/20 border-red-500'}`}>
+                      <p className="text-2xl font-medium mb-4">{h.sentence}</p>
+                      
+                      <div className="flex items-center space-x-4 mb-4 bg-gray-900/50 p-4 rounded-xl inline-block">
+                        <span className={`text-xl font-bold line-through decoration-4 ${h.isCorrect ? 'text-green-300 decoration-green-600' : 'text-rose-400 decoration-rose-600'}`}>
+                          {h.guessedWord}
+                        </span>
+                        <span className="text-gray-500 text-xl">➔</span>
+                        <span className="text-green-400 text-2xl font-black">
+                          {h.correction}
+                        </span>
+                      </div>
+                      
+                      <p className="text-lg text-blue-200">{h.explanation}</p>
+                    </div>
+                  ))}
                 </div>
-                
-                <p className="text-lg text-blue-200">{h.explanation}</p>
               </div>
-            ))}
-          </div>
+            );
+          })}
         </div>
         
         <button onClick={() => setPhase('setup')} className="mt-12 bg-gray-700 hover:bg-gray-600 text-white font-bold py-4 px-10 rounded-full transition-all">
@@ -268,8 +282,14 @@ function App() {
             <span className={`text-5xl font-black ${timeLeft <= 10 ? 'text-red-500 animate-pulse' : 'text-purple-400'}`}>{timeLeft}s</span>
             {/* +2s Animation */}
             {addedTimeKey > 0 && (
-              <span key={addedTimeKey} className="absolute -top-6 -right-8 text-green-400 font-black text-2xl animate-bounce-fade-up pointer-events-none drop-shadow-md">
+              <span key={`add-${addedTimeKey}`} className="absolute -top-6 -right-8 text-green-400 font-black text-2xl animate-bounce-fade-up pointer-events-none drop-shadow-md">
                 +2s
+              </span>
+            )}
+            {/* -1s Animation */}
+            {deductedTimeKey > 0 && (
+              <span key={`deduct-${deductedTimeKey}`} className="absolute -bottom-6 -right-8 text-red-500 font-black text-2xl animate-bounce-fade-up pointer-events-none drop-shadow-md">
+                -1s
               </span>
             )}
           </div>
